@@ -1,4 +1,4 @@
-NAME = brainz
+NAME = ex00
 
 COMPILE = c++
 
@@ -12,6 +12,8 @@ HEADER = $(OBJ:.o=.d)
 
 SRC =	main.cpp \
 		Zombie/Zombie.cpp \
+		randomChump.cpp \
+		newZombie.cpp \
 
 all: $(NAME)
 
