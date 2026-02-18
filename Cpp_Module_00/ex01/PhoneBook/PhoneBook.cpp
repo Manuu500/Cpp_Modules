@@ -101,17 +101,17 @@ void	PhoneBook::store_contact(Contact contact)
 
 void    PhoneBook::printContacts(size_t contact_count)
 {
-    std::cout << std::setw(10) << "Index " << " | "
-            << std::setw(10) << " FirstName " << " | " 
-            << std::setw(10) << " LastName " << " | " 
-            << std::setw(10) << " Nickname " << " | " 
+    std::cout << std::setw(10) << "Index" << "|"
+            << std::setw(10) << "FirstName" << "|" 
+            << std::setw(10) << "LastName" << "|" 
+            << std::setw(10) << "Nickname" << "|" 
             << std::endl;
     for(size_t i = 0; i < contact_count; i++)
     {
-        std::cout << std::setw (10) << i << " | " 
-                << std::setw(10) << putFirstName(contacts, i) << " | " 
-                << std::setw(10) << putSecondName(contacts, i) << " | " 
-                << std::setw(10) << putNickname(contacts, i) << " | "
+        std::cout << std::setw (10) << i << "|" 
+                << std::setw(10) << putFirstName(contacts, i) << "|" 
+                << std::setw(10) << putSecondName(contacts, i) << "|" 
+                << std::setw(10) << putNickname(contacts, i) << "|"
                 << std::setw(10) << std::endl;     
     }
 }
