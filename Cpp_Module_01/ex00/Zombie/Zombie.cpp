@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 14:17:54 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/02/18 17:17:00 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/02/25 11:54:36 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,10 @@
 #include "Zombie.hpp"
 
 using namespace std;
+
+Zombie::Zombie(std::string _name) :
+	name(_name)
+{}
 
 void	Zombie::setName(const std::string& firstName) {
 	this->name = firstName;

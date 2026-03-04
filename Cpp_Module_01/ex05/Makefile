@@ -1,20 +1,17 @@
-NAME = ex03
+NAME = ex05
 
 COMPILE = c++
 
-INCLUDES = -IZombie -IHumanA -IHumanB -IWeapon
+INCLUDES = -IHarl
 
-FLAGS = -Wall -Wextra -Werror -std=c++98 $(INCLUDES) -MMD
+FLAGS = -Wall -Wextra -Werror -std=c++98 $(INCLUDES) -MMD -g
 
 OBJ = $(addprefix obj/, $(SRC:.cpp=.o))
 
 HEADER = $(OBJ:.o=.d)
 
 SRC =	main.cpp \
-		HumanA/HumanA.cpp \
-		HumanB/HumanB.cpp \
-		Weapon/Weapon.cpp
-
+		Harl/Harl.cpp \
 
 all: $(NAME)
 
