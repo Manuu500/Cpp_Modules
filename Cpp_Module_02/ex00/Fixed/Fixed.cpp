@@ -6,13 +6,12 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/09 14:57:10 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/03/09 15:36:38 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/03/17 13:02:32 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include "Fixed.hpp"
-using namespace std;
 
 Fixed::Fixed() : _num(0){
 	std::cout << "Default constructor called" << std::endl;
