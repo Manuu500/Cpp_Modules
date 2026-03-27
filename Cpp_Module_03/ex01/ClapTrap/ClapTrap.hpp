@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/26 11:33:17 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/03/27 15:49:52 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/03/27 15:49:25 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include <string>
 
 class ClapTrap {
-    private:
+    protected:
         std::string name;
         int         life;
         int         energy;
