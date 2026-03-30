@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/03 12:15:16 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/03/03 13:30:33 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/03/30 09:57:51 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #include <iostream>
 #include <string.h>
 
-using namespace std;
 
 int main (int argc, char **argv)
 {

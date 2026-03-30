@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 16:21:52 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/02/18 17:17:27 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/03/30 09:51:47 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,10 @@
 #include <string>
 #include <cstdlib>
 #include "Zombie.hpp"
-
-using namespace std;
 	
 
 void randomChump( std::string name )
 {
-    Zombie z;
-    z.setName(name);
+    Zombie z(name);
     z.announce();
 }

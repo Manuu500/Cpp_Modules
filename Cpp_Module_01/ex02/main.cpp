@@ -6,15 +6,13 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 17:43:29 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/02/25 11:47:49 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/03/30 09:55:31 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <string>
 #include <cstdlib>
-
-using namespace std;
 
 int main(void)
 {

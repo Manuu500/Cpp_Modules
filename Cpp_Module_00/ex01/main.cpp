@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/03/30 09:38:13 by mruiz-ur          #+#    #+#             */
+/*   Updated: 2026/03/30 09:38:19 by mruiz-ur         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
+
 #include <iostream>
 #include <string>
 #include <cstdlib>
 #include "Contact.hpp"
 #include "Phonebook.hpp"
-
-using namespace std;
 
 int main(void)
 {

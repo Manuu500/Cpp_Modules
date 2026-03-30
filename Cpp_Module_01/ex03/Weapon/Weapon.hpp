@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 18:06:50 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/02/25 12:48:55 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/03/30 09:57:40 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 #include <iostream>
 #include <string>
 #include <cstdlib>
-using namespace std;
 
 class Weapon {
     private:

@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 18:06:45 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/02/25 13:04:08 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/03/30 09:57:34 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 #include <string>
 #include <cstdlib>
 #include "Weapon.hpp"
-using namespace std;
 
 class Human_B {
     private:

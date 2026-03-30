@@ -6,14 +6,13 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/04 12:53:04 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/03/04 14:18:45 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/03/30 09:58:21 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <fstream>
 #include <Harl.hpp>
-using namespace std;
 
 int main (void)
 {

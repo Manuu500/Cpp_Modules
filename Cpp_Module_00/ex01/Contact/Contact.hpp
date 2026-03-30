@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Contact.hpp                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/03/30 09:39:14 by mruiz-ur          #+#    #+#             */
+/*   Updated: 2026/03/30 09:41:38 by mruiz-ur         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
+
 #ifndef CONTACT_HPP
 #define CONTACT_HPP
 
 #include <iostream>
 #include <string>
-
-using namespace std;
 
 
 class Contact {

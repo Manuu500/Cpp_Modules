@@ -6,14 +6,13 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/04 12:53:42 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/03/04 14:21:06 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/03/30 09:58:27 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <fstream>
 #include <Harl.hpp>
-using namespace std;
 
 void	Harl::debug(void)
 {

@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 17:19:50 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/02/25 11:50:14 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/03/30 09:54:42 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 
 #include <iostream>
 #include <string>
-
-using namespace std;
 
 
 class Zombie {
