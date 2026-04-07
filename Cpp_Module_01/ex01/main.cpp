@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 17:18:31 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/03/30 09:54:49 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/04/07 15:00:22 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,10 @@ int main (void)
     int num = 7;
     
     zArray = zombieHorde(num, "manuel");
-    free_zombie(zArray);
+    
+    for (int i = 0; i < num; i++)
+        zArray[i].announce();
+    
+    delete[] zArray;
     return 1;
 }

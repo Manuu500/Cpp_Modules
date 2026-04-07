@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/30 09:42:06 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/03/30 09:47:38 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/04/07 16:09:19 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ std::size_t PhoneBook::getContactCount() const {
     return contact_count;
 }
 
-static string getFirstName(void)
+static std::string getFirstName(void)
 {
     std::string firstName;
     std::cout << "Put first name" << std::endl;
@@ -32,7 +32,7 @@ static string getFirstName(void)
     return (firstName);
 }
 
-static string getLastName(void)
+static std::string getLastName(void)
 {
     std::string lastName;
     std::cout << "Put last name" << std::endl;
@@ -40,7 +40,7 @@ static string getLastName(void)
     return (lastName);  
 }
 
-static string getNickname(void)
+static std::string getNickname(void)
 {
     std::string nick;
     std::cout << "Put nickname" << std::endl;
@@ -48,7 +48,7 @@ static string getNickname(void)
     return (nick);   
 }
 
-static string getPhoneNumber(void)
+static std::string getPhoneNumber(void)
 {
     std::string phone;
     std::cout << "Put phone number" << std::endl;
@@ -56,7 +56,7 @@ static string getPhoneNumber(void)
     return (phone);   
 }
 
-static string getDarkestSecret(void)
+static std::string getDarkestSecret(void)
 {
     std::string secret;
     std::cout << "Put darkest secret" << std::endl;
@@ -76,33 +76,49 @@ void    PhoneBook::addContact(void)
     store_contact(newContact);
 }
 
-static string putFirstName(Contact *contacts, int i)
+static std::string putFirstName(Contact *contacts, int i)
 {
-    string firstNameContact = contacts[i].getFirstName();
+    std::string firstNameContact = contacts[i].getFirstName();
 
     if (firstNameContact.length() > 10)
         return firstNameContact.substr(0, 9) + ".";
     return firstNameContact;
 }
 
-static string putSecondName(Contact *contacts, int i)
+static std::string putSecondName(Contact *contacts, int i)
 {
-    string secondNameContact = contacts[i].getLastName();
+    std::string secondNameContact = contacts[i].getLastName();
 
     if (secondNameContact.length() > 10)
         return secondNameContact.substr(0, 9) + ".";
     return secondNameContact;
 }
 
-static string putNickname(Contact *contacts, int i)
+static std::string putNickname(Contact *contacts, int i)
 {
-    string nick = contacts[i].getNickname();
+    std::string nick = contacts[i].getNickname();
 
     if (nick.length() > 10)
         return nick.substr(0, 9) + ".";
     return nick;
 }
 
+static std::string putPhoneNumber(Contact *contacts, int i)
+{
+    std::string nick = contacts[i].getPhoneNumber();
+
+    if (nick.length() > 10)
+        return nick.substr(0, 9) + ".";
+    return nick;
+}
+static std::string putDarkestSecret(Contact *contacts, int i)
+{
+    std::string nick = contacts[i].getDarkestSecret();
+
+    if (nick.length() > 10)
+        return nick.substr(0, 9) + ".";
+    return nick;
+}
 
 void	PhoneBook::store_contact(Contact contact)
 {
@@ -115,6 +131,8 @@ void	PhoneBook::store_contact(Contact contact)
 
 void    PhoneBook::printContacts(size_t contact_count)
 {
+    size_t option;
+    
     std::cout << std::setw(10) << "Index" << "|"
             << std::setw(10) << "FirstName" << "|" 
             << std::setw(10) << "LastName" << "|" 
@@ -128,4 +146,22 @@ void    PhoneBook::printContacts(size_t contact_count)
                 << std::setw(10) << putNickname(contacts, i) << "|"
                 << std::setw(10) << std::endl;     
     }
+    std::cout << "Usuario a ver la informacion completa" << std::endl;
+    std::cin >> option;
+    if (option > contact_count || option < contact_count)
+        std::cout << "Usuario no encontrado" << std::endl;
+    for (size_t i = 0; i < contact_count; i++)
+    {
+        if (option == i)
+        {
+                std::cout << putFirstName(contacts, i) << std::endl;
+                std::cout << putSecondName(contacts, i) << std::endl;
+                std::cout << putNickname(contacts, i) << std::endl;
+                std::cout << putPhoneNumber(contacts, i) << std::endl;
+                std::cout << putDarkestSecret(contacts, i) << std::endl;
+                std::cout << std::endl; 
+        }
+    }
+    std::cout << std::endl;
+    
 }

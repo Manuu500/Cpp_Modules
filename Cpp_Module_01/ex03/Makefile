@@ -4,7 +4,7 @@ COMPILE = c++
 
 INCLUDES = -IZombie -IHumanA -IHumanB -IWeapon
 
-FLAGS = -Wall -Wextra -Werror -std=c++98 $(INCLUDES) -MMD
+FLAGS = -Wall -Wextra -Werror -std=c++98 $(INCLUDES) -MMD -g
 
 OBJ = $(addprefix obj/, $(SRC:.cpp=.o))
 

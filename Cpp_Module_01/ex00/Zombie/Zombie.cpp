@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 14:17:54 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/03/30 09:50:20 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/04/07 14:56:26 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ std::string	Zombie::getName(void) const {
 	return (this->name);
 }
 
-void Zombie::announce(void)
+void Zombie::announce(void) const
 {
 	std::cout << this->name + ": " << "BraiiiiiiinnnzzzZ..." << std::endl;
 }

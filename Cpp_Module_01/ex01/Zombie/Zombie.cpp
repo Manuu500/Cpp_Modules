@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 17:19:48 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/03/30 09:54:39 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/04/07 16:08:32 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,4 @@ std::string	Zombie::getName(void) const {
 void Zombie::announce(void)
 {
 	std::cout << this->name + ": " << "BraiiiiiiinnnzzzZ..." << std::endl;
-}
-
-void    free_zombie(Zombie *z)
-{
-    delete[] z;
 }

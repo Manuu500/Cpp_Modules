@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 14:17:48 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/03/30 09:52:56 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/04/07 14:55:51 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class Zombie {
 		Zombie(std::string name);
 	    void    setName(const std::string& firstName);
 		std::string getName(void) const;
-		void announce( void );
+		void announce( void ) const;
 };
 
 Zombie* newZombie( std::string name );

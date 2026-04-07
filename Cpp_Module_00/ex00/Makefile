@@ -19,8 +19,6 @@ obj/%.o: %.cpp
 	@mkdir -p $(dir $@)
 	@$(COMPILE) $(FLAGS) -c $< -o $@
 
--include $(HEADER)
-
 clean:
 	@rm -rf obj/
 
