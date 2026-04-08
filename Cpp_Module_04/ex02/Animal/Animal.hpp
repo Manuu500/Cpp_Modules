@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/27 15:56:13 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/03/27 16:41:34 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/04/08 10:11:01 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class Animal {
         Animal& operator=(const Animal& r);
         virtual ~Animal();
         const std::string& getType() const;
-        virtual void makeSound() const;
+        virtual void makeSound() const = 0;
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/26 11:32:16 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/03/27 15:43:24 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/04/08 10:03:08 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ FlagTrap::FlagTrap(const std::string& name) : ClapTrap(name) {
     this->life = 100;
     this->energy = 100;
     this->attack_pts = 30; 
-    std::cout << "Name constructor called" << std::endl;
+    std::cout << "FlagTrap name constructor called" << std::endl;
 }
 
 FlagTrap::FlagTrap(const FlagTrap &other) : ClapTrap(other) {

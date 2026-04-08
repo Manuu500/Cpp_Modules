@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 16:17:32 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/04/07 16:25:33 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/04/08 09:56:41 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,9 @@ public:
 	Fixed& 			operator++(void);
 	Fixed 			operator++(int);
 	static 			Fixed& max(Fixed& a, Fixed& b);
-	static const 	Fixed max(const Fixed& a, const Fixed& b);
+	static const 	Fixed& max(const Fixed& a, const Fixed& b);
 	static 			Fixed& min(Fixed& a, Fixed& b);
-	static const 	Fixed min(const Fixed& a, const Fixed& b);
+	static const 	Fixed& min(const Fixed& a, const Fixed& b);
 };
 
 std::ostream& operator<<(std::ostream& os, const Fixed& fixed);

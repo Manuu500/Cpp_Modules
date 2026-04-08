@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 18:06:48 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/04/07 16:28:21 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/04/08 09:40:07 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,5 @@ void	Weapon::setType(std::string _type) {
 }
 
 std::string Weapon::getType(void) {
-	if (this->type.empty())
-		return ("bare hands");
 	return (this->type);
 }

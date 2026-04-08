@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 16:17:35 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/04/07 16:25:34 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/04/08 09:56:39 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,7 @@ Fixed& Fixed::min(Fixed& a, Fixed& b) {
 		return b;
 }
 
-const Fixed Fixed::min(const Fixed& a, const Fixed& b) {
+const Fixed& Fixed::min(const Fixed& a, const Fixed& b) {
 	if (a < b)
 		return a;
 	else
@@ -96,7 +96,7 @@ Fixed& Fixed::max(Fixed& a, Fixed& b) {
 		return b;
 }
 
-const Fixed Fixed::max(const Fixed& a, const Fixed& b) {
+const Fixed& Fixed::max(const Fixed& a, const Fixed& b) {
 	if (a > b)
 		return a;
 	else

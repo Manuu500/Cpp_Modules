@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/26 11:32:16 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/03/27 15:25:05 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/04/08 10:02:54 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ ScavTrap::ScavTrap(const std::string& name) : ClapTrap(name) {
     this->life = 100;
     this->energy = 50;
     this->attack_pts = 20; 
-    std::cout << "Name constructor called" << std::endl;
+    std::cout << "ScavTrap name constructor called" << std::endl;
 }
 
 ScavTrap::ScavTrap(const ScavTrap &other) : ClapTrap(other) {
