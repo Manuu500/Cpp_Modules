@@ -6,7 +6,7 @@ m01-ex01 free zombie unneeded ✅
 m01-ex03 humanb must not crash when attacking without weapon ✅
 m01-ex04 no remplaza siempre, solo remplaza la primera ocasion en cada linea (?) ✅
 m01-ex05 no imprime mensaje al usuario ✅
-m02-ex2 no estan implementados todos los operadores ni comparaciones (pa despues)
+m02-ex2 no estan implementados todos los operadores ni comparaciones ✅
 m02-ex2 max/min constantes no devuelve referencias ✅
 m03-ex0-2 constructor de nombre y deconstructor no dice que clase es ✅
 m04-ex02 la clase Animal no es abstracta y no tiene el prefijo A ✅

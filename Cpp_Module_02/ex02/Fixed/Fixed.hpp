@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 16:17:32 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/04/08 09:56:41 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/04/08 10:30:01 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,14 @@ public:
 	
 	bool operator<(const Fixed& other) const;
 	bool operator>(const Fixed& other) const;
-	Fixed operator*(const Fixed& other);
+	bool operator<=(const Fixed& other) const;
+	bool operator>=(const Fixed& other) const;
+	bool operator==(const Fixed& other) const;
+	bool operator!=(const Fixed& other) const;
+	Fixed operator+(const Fixed& other) const;
+	Fixed operator-(const Fixed& other) const;
+	Fixed operator*(const Fixed& other) const;
+	Fixed operator/(const Fixed& other) const;
 	Fixed& 			operator++(void);
 	Fixed 			operator++(int);
 	static 			Fixed& max(Fixed& a, Fixed& b);

@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 16:17:35 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/04/08 09:56:39 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/04/08 10:30:40 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,12 +42,6 @@ Fixed::Fixed(const float value) : num(roundf(value * (1 * 256))) {
     std::cout << "Float constructor called" << std::endl;
 }
 
-Fixed Fixed::operator*(const Fixed& other) {
-	Fixed result;
-	result.num = (num * other.num) >> frac;
-	return result;
-}
-
 bool Fixed::operator<(const Fixed& other) const {
 	return  num < other.num;
 }
@@ -65,6 +59,51 @@ Fixed Fixed::operator++(int) {
 	Fixed tmp(*this);
 	++num;
 	return tmp;
+}
+
+bool Fixed::operator<=(const Fixed& other) const { 
+	return num <= other.num; 
+}
+
+bool Fixed::operator>=(const Fixed& other) const { 
+	return num >= other.num; 
+}
+
+bool Fixed::operator==(const Fixed& other) const {
+	return num == other.num;
+}
+
+bool Fixed::operator!=(const Fixed& other) const { 
+	return num != other.num; 
+}
+
+Fixed Fixed::operator+(const Fixed& other) const {
+    Fixed result;
+    result.num = num + other.num;
+    return result;
+}
+
+Fixed Fixed::operator-(const Fixed& other) const {
+    Fixed result;
+    result.num = num - other.num;
+    return result;
+}
+
+Fixed Fixed::operator*(const Fixed& other) const {
+    Fixed result;
+    result.num = (static_cast<long>(num) * other.num) >> frac;
+    return result;
+}
+
+Fixed Fixed::operator/(const Fixed& other) const {
+    Fixed result;
+    if (other.num == 0) {
+        std::cerr << "Error: division by zero" << std::endl;
+        result.num = 0;
+        return result;
+    }
+    result.num = (static_cast<long>(num) << frac) / other.num;
+    return result;
 }
 
 float Fixed::toFloat( void ) const{
