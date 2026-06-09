@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/30 09:42:14 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/03/30 09:47:18 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/06/09 17:27:43 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 
 #include <iostream>
 #include <string>
+#include <cstdlib>
 #include "Contact.hpp"
 
 

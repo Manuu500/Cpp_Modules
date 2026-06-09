@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/30 09:42:06 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/04/07 16:09:19 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/06/09 17:28:38 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,11 +68,16 @@ void    PhoneBook::addContact(void)
 {
     Contact newContact;
     
-    newContact.setFirstName(getFirstName());
-    newContact.setLastName(getLastName());
-    newContact.setNickname(getNickname());
-    newContact.setPhoneNumber(getPhoneNumber());
-    newContact.setDarkestSecret(getDarkestSecret());
+    if (newContact.setFirstName(getFirstName()) == 1)
+        return ;
+    if (newContact.setLastName(getLastName()) == 1)
+        return ;
+    if (newContact.setNickname(getNickname()) == 1)
+        return ;
+    if (newContact.setPhoneNumber(getPhoneNumber()) == 1)
+        return ;
+    if (newContact.setDarkestSecret(getDarkestSecret()) == 1)
+        return ;
     store_contact(newContact);
 }
 
@@ -132,6 +137,7 @@ void	PhoneBook::store_contact(Contact contact)
 void    PhoneBook::printContacts(size_t contact_count)
 {
     size_t option;
+    std::string input;
     
     std::cout << std::setw(10) << "Index" << "|"
             << std::setw(10) << "FirstName" << "|" 
@@ -147,9 +153,19 @@ void    PhoneBook::printContacts(size_t contact_count)
                 << std::setw(10) << std::endl;     
     }
     std::cout << "Usuario a ver la informacion completa" << std::endl;
-    std::cin >> option;
-    if (option > contact_count || option < contact_count)
+    std::cin >> input;
+    std::cout << std::endl;
+    option = (size_t)std::atoi(input.c_str());    
+    if (input.length() != 1 || !isdigit(input[0]))
+    {
+        std::cout << "Error: input invalido\n" << std::endl;
+        return ;
+    }
+    else if (option < 1 || option > contact_count)
+    {
         std::cout << "Usuario no encontrado" << std::endl;
+        return ;
+    }
     for (size_t i = 0; i < contact_count; i++)
     {
         if (option == i)

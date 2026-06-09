@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/30 09:39:14 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/03/30 09:41:38 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/06/09 16:45:25 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,11 @@ class Contact {
         std::string phoneNumber;
         std::string darkestSecret;
     public:
-        void    setFirstName(const std::string& firstName);
-        void    setLastName(const std::string& lastName);
-        void    setNickname(const std::string& nickname);
-        void    setPhoneNumber(const std::string& phoneNumber);
-        void    setDarkestSecret(const std::string& darkestSecret);
+        int    setFirstName(const std::string& firstName);
+        int    setLastName(const std::string& lastName);
+        int    setNickname(const std::string& nickname);
+        int    setPhoneNumber(const std::string& phoneNumber);
+        int    setDarkestSecret(const std::string& darkestSecret);
         std::string	getFirstName(void) const;
 		std::string	getLastName(void) const;
 		std::string	getNickname(void) const;
