@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/30 09:42:06 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/06/09 17:28:38 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/06/10 17:40:18 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 
 PhoneBook::PhoneBook(void) {
 	contact_count = 0;
+    oldest_index = 0;
 }
 
 std::size_t PhoneBook::getContactCount() const {
@@ -128,10 +129,15 @@ static std::string putDarkestSecret(Contact *contacts, int i)
 void	PhoneBook::store_contact(Contact contact)
 {
 	if (contact_count < 8)
-	{
+	{        
 		contacts[contact_count] = contact;
 		contact_count++;
 	}
+    else
+    {
+        contacts[oldest_index] = contact;
+        oldest_index = (oldest_index + 1) % 8;
+    }
 }
 
 void    PhoneBook::printContacts(size_t contact_count)

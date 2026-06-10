@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/30 09:42:14 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/06/09 17:27:43 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/06/10 17:39:26 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ class PhoneBook{
     private:
         Contact contacts[8];
         size_t 	contact_count;
+        size_t  oldest_index;
 		void	store_contact(Contact contact);
     public:
         PhoneBook();
