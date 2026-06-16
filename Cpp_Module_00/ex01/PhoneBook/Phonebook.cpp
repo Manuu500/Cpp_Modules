@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/30 09:42:06 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/06/10 17:40:18 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/06/12 12:08:19 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -167,7 +167,7 @@ void    PhoneBook::printContacts(size_t contact_count)
         std::cout << "Error: input invalido\n" << std::endl;
         return ;
     }
-    else if (option < 1 || option > contact_count)
+    else if (option < 0 || option > contact_count)
     {
         std::cout << "Usuario no encontrado" << std::endl;
         return ;
