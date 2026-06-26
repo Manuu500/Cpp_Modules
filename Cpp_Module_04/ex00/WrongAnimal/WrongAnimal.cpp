@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/27 16:44:34 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/03/27 16:49:56 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/06/26 16:32:19 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,16 @@
 
 WrongAnimal::WrongAnimal() {
 	this->type = "WrongAnimal";
-    std::cout << "Default constructor called" << std::endl;
+    std::cout << "Default constructor called for " << this->type << std::endl;
 }
 
 WrongAnimal::WrongAnimal(const std::string& name) {
 	this->type = name;
-    std::cout << "Name constructor called" << std::endl;
+    std::cout << "Name constructor called for " << this->type << std::endl;
 }
 
 WrongAnimal::WrongAnimal(const WrongAnimal &other) {
-	std::cout << "Copy constructor called" << std::endl;
+	std::cout << "Copy constructor called for " << this->type << std::endl;
 	*this = other;
 }
 
@@ -36,7 +36,7 @@ WrongAnimal &WrongAnimal::operator=(const WrongAnimal &other) {
 }
 
 WrongAnimal::~WrongAnimal() {
-    std::cout << "Destructor called" << std::endl;
+    std::cout << "WrongAnimal destructor called" << std::endl;
 }
 
 void    WrongAnimal::makeSound(void) const

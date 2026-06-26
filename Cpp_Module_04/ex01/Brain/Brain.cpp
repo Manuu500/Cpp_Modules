@@ -6,13 +6,15 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/30 09:05:09 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/03/30 09:12:45 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/06/26 17:42:30 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Brain.hpp"
 
 Brain::Brain() {
+	
+	this->ideas[0] = "me gustan los tomates";
 }
 
 Brain::Brain(const Brain& other) {
@@ -28,5 +30,6 @@ Brain& Brain::operator=(const Brain& other) {
 }
 
 Brain::~Brain() {
+	std::cout << "Idea: " << ideas[0] << std::endl;
 }
 

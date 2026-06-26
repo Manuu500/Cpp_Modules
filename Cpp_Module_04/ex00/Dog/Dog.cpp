@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/27 16:12:19 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/03/27 16:37:05 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/06/26 17:44:59 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 Dog::Dog() : Animal("Dog"){
 	this->type =  "Dog";
-    std::cout << "Dog default constructor called" << std::endl;
+    std::cout << "Dog default constructor called for " << this->type << std::endl;
 }
 
 Dog::Dog(const std::string& name) : Animal(name) {
