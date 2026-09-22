@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 16:17:32 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/04/08 10:30:01 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/06/25 12:16:35 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ public:
 	Fixed operator/(const Fixed& other) const;
 	Fixed& 			operator++(void);
 	Fixed 			operator++(int);
+	Fixed& 			operator--(void);
+	Fixed 			operator--(int);
 	static 			Fixed& max(Fixed& a, Fixed& b);
 	static const 	Fixed& max(const Fixed& a, const Fixed& b);
 	static 			Fixed& min(Fixed& a, Fixed& b);

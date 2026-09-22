@@ -14,8 +14,6 @@ SRC =	main.cpp \
 		Animal/Animal.cpp \
 		Dog/Dog.cpp \
 		Cat/Cat.cpp \
-		WrongAnimal/WrongAnimal.cpp \
-		WrongCat/WrongCat.cpp \
 		Brain/Brain.cpp
 
 all: $(NAME)

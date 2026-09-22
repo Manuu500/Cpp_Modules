@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 16:17:35 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/04/08 10:30:40 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/06/25 12:17:05 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,17 @@ Fixed& Fixed::operator++(void) {
 Fixed Fixed::operator++(int) {
 	Fixed tmp(*this);
 	++num;
+	return tmp;
+}
+
+Fixed& Fixed::operator--(void) {
+	--num;
+	return *this;
+}
+
+Fixed Fixed::operator--(int) {
+	Fixed tmp(*this);
+	--num;
 	return tmp;
 }
 

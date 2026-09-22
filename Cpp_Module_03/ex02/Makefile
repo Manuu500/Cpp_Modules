@@ -2,7 +2,7 @@ NAME = ex02
 
 COMPILE = c++
 
-INCLUDES = -IClapTrap -IScavTrap -IFlagTrap
+INCLUDES = -IClapTrap -IScavTrap -IFragTrap
 
 FLAGS = -Wall -Wextra -Werror -std=c++98 $(INCLUDES) -MMD
 
@@ -13,7 +13,7 @@ HEADER = $(OBJ:.o=.d)
 SRC =	main.cpp \
 		ClapTrap/ClapTrap.cpp \
 		ScavTrap/ScavTrap.cpp \
-		FlagTrap/FlagTrap.cpp
+		FragTrap/FragTrap.cpp
 
 
 all: $(NAME)
