@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   BureauBureaucat.hpp                                      :+:      :+:    :+:   */
+/*   Bureaucrat.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 10:08:27 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/09/22 10:10:48 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2026/10/01 11:28:03 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BUREAUCAT_HPP
-# define BUREAUCAT_HPP
+#ifndef BUREAUCRAT_HPP
+# define BUREAUCRAT_HPP
 
 #include <iosfwd>
 #include <string>
 #include <exception>
 
-class Form;
+class AForm;
 
-class Bureaucat {
+class Bureaucrat {
 
     private:
         const std::string name;
@@ -38,19 +38,20 @@ class Bureaucat {
                 virtual const char* what() const throw();
         };
 
-        Bureaucat();
-        Bureaucat(const std::string& name, int grade);
+        Bureaucrat();
+        Bureaucrat(const std::string& name, int grade);
         const std::string& getName() const;
         int getGrade() const;
         void incrementGrade();
         void decrementGrade();
-        Bureaucat(const std::string& name);
-        Bureaucat(const Bureaucat& r);
-        Bureaucat& operator=(const Bureaucat& r);
-        ~Bureaucat();
-        void signForm(Form& f);
+        Bureaucrat(const std::string& name);
+        Bureaucrat(const Bureaucrat& r);
+        Bureaucrat& operator=(const Bureaucrat& r);
+        ~Bureaucrat();
+        void signForm(AForm& f);
+        void executeForm(AForm const & form) const;
 };
 
-std::ostream& operator<<(std::ostream& os, Bureaucat const& b);
+std::ostream& operator<<(std::ostream& os, Bureaucrat const& b);
 
 #endif

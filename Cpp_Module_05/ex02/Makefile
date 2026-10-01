@@ -1,8 +1,8 @@
-NAME = ex01
+NAME = ex02
 
 COMPILE = c++
 
-INCLUDES = -IBureaucat -IAForm
+INCLUDES = -IBureaucrat -IAForm
 
 FLAGS = -Wall -Wextra -Werror -std=c++98 $(INCLUDES) -MMD
 
@@ -11,8 +11,11 @@ OBJ = $(addprefix obj/, $(SRC:.cpp=.o))
 HEADER = $(OBJ:.o=.d)
 
 SRC =	main.cpp \
-		Bureaucat/Bureaucat.cpp	\
-		AForm/AForm.cpp
+		Bureaucrat/Bureaucrat.cpp \
+		AForm/AForm.cpp \
+		ShrubberyCreationForm/ShrubberyCreationForm.cpp \
+		RobotomyRequestForm/RobotomyRequestForm.cpp \
+		PresidentialPardonForm/PresidentialPardonForm.cpp
 
 all: $(NAME)
 

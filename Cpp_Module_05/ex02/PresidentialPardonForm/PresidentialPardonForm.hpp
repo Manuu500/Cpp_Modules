@@ -1,30 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ShrubberyCreationForm.hpp                          :+:      :+:    :+:   */
+/*   PresidentialPardonForm.hpp                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/28 09:49:02 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2026/10/01 11:28:57 by mruiz-ur         ###   ########.fr       */
+/*   Created: 2026/10/01 10:18:30 by mruiz-ur          #+#    #+#             */
+/*   Updated: 2026/10/01 11:29:10 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SHRUBBERYCREATIONFORM_HPP
-# define SHRUBBERYCREATIONFORM_HPP
+#ifndef PRESIDENTIALPARDONFORM_HPP
+# define PRESIDENTIALPARDONFORM_HPP
 
 # include <string>
 # include "../AForm/AForm.hpp"
 
-class ShrubberyCreationForm : public AForm{
+class PresidentialPardonForm : public AForm {
     private:
         std::string target;
     public:
-        ShrubberyCreationForm();
-        explicit ShrubberyCreationForm(const std::string& target);
-        ShrubberyCreationForm(const ShrubberyCreationForm& r);
-        ShrubberyCreationForm& operator=(const ShrubberyCreationForm& r);
-        ~ShrubberyCreationForm();
+        PresidentialPardonForm();
+        explicit PresidentialPardonForm(const std::string& target);
+        PresidentialPardonForm(const PresidentialPardonForm& r);
+        PresidentialPardonForm& operator=(const PresidentialPardonForm& r);
+        ~PresidentialPardonForm();
 
         virtual void execute(Bureaucrat const & executor) const;
 };
