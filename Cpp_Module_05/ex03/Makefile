@@ -1,8 +1,7 @@
-NAME = ex02
-
+NAME = ex03
 COMPILE = c++
 
-INCLUDES = -IBureaucrat -IAForm -IPresidentialPardonForm -IRobotomyRequestForm -IShrubberyCreationForm
+INCLUDES = -IBureaucrat -IAForm -IPresidentialPardonForm -IRobotomyRequestForm -IShrubberyCreationForm -IIntern
 
 FLAGS = -Wall -Wextra -Werror -std=c++98 $(INCLUDES) -MMD
 
@@ -15,7 +14,8 @@ SRC =	main.cpp \
 		AForm/AForm.cpp \
 		ShrubberyCreationForm/ShrubberyCreationForm.cpp \
 		RobotomyRequestForm/RobotomyRequestForm.cpp \
-		PresidentialPardonForm/PresidentialPardonForm.cpp
+		PresidentialPardonForm/PresidentialPardonForm.cpp \
+		Intern/Intern.cpp
 
 all: $(NAME)
 
